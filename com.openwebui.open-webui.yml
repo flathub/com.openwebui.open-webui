@@ -44,6 +44,10 @@ modules:
         url: https://github.com/open-webui/desktop.git
         tag: v0.0.9
         commit: 44c40eabd66904b7951bbcf3d2f1e50635546ebf
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/open-webui/desktop/releases/latest
+          tag-query: .tag_name
       - generated-sources.json
       - type: script
         dest-filename: run.sh
@@ -52,5 +56,9 @@ modules:
       - type: file
         url: https://github.com/open-webui/desktop/releases/download/v0.0.9/open-webui_amd64.deb
         sha256: 3f17a73dad1b284545a67de137132a5d503e58a7cc08fa1546d6fc415e5e2b60
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/open-webui/desktop/releases/latest
+          url-query: .assets[] | select(.name=="open-webui_amd64.deb") | .browser_download_url
       - type: file
         path: asar.patch
