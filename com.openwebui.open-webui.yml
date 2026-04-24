@@ -35,15 +35,16 @@ modules:
       - ar x open-webui*.deb
       - tar xf data.tar.xz
       - mv usr/share/applications /app/share
-      - desktop-file-edit --set-key Exec --set-value "run.sh %U" --set-key Icon --set-value com.openwebui.open-webui /app/share/applications/open-webui.desktop
+      - desktop-file-edit --set-key Exec --set-value "run.sh %U" --set-key Icon --set-value
+        com.openwebui.open-webui /app/share/applications/open-webui.desktop
       - install -Dm644  build/icon.png /app/share/icons/hicolor/512x512/apps/com.openwebui.open-webui.png
       - install -Dm644 -t /app/share/metainfo build/com.openwebui.open-webui.metainfo.xml
       - install -Dm755 -t /app/bin run.sh
     sources:
       - type: git
         url: https://github.com/open-webui/desktop.git
-        tag: v0.0.9
-        commit: 44c40eabd66904b7951bbcf3d2f1e50635546ebf
+        tag: v0.0.12
+        commit: 27a3075c3a0d046949625e0d259b0567e275d1f6
         x-checker-data:
           type: json
           url: https://api.github.com/repos/open-webui/desktop/releases/latest
