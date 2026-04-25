@@ -55,8 +55,8 @@ modules:
         commands:
           - zypak-wrapper.sh /app/main/open-webui "$@"
       - type: file
-        url: https://github.com/open-webui/desktop/releases/download/v0.0.9/open-webui_amd64.deb
-        sha256: 3f17a73dad1b284545a67de137132a5d503e58a7cc08fa1546d6fc415e5e2b60
+        url: https://github.com/open-webui/desktop/releases/download/v0.0.12/open-webui_amd64.deb
+        sha256: 250b07721b1b437042f8a6dc9fb247f4e0aa968bc47ef8d11d9037b6dd12156f
         x-checker-data:
           type: json
           url: https://api.github.com/repos/open-webui/desktop/releases/latest
