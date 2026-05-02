@@ -43,8 +43,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/open-webui/desktop.git
-        tag: v0.0.16
-        commit: ef53d6fb21625f0c58fbf4f889e11db9e41c7d5a
+        tag: v0.0.17
+        commit: 842c1481f67bd3312302a6470f9bbe720c94f52e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/open-webui/desktop/releases/latest
@@ -55,8 +55,8 @@ modules:
         commands:
           - zypak-wrapper.sh /app/main/open-webui "$@"
       - type: file
-        url: https://github.com/open-webui/desktop/releases/download/v0.0.16/open-webui_amd64.deb
-        sha256: 994c7cc1a02e4ae2ead64c589d8c70b961ebd919d6ecbc51795f9feb3308d9af
+        url: https://github.com/open-webui/desktop/releases/download/v0.0.17/open-webui_amd64.deb
+        sha256: 765fc0c99c9242f2e1e776582c4b6599c92331000da21d60afb0f253dcc30ecc
         x-checker-data:
           type: json
           url: https://api.github.com/repos/open-webui/desktop/releases/latest
