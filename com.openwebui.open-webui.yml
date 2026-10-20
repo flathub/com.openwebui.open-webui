@@ -64,3 +64,5 @@ modules:
           url-query: .assets[] | select(.name=="open-webui_amd64.deb") | .browser_download_url
       - type: file
         path: asar.patch
+      - type: patch
+        path: electron-builder.patch
