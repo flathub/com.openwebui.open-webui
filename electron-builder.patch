@@ -1,0 +1,11 @@
+--- a/electron-builder.yml
++++ b/electron-builder.yml
+@@ -10,6 +10,8 @@
+   - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,README.md}'
+   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
++  - '!flatpak-node/**'
++  - '!*.deb'
+ extraResources:
+   - from: CHANGELOG.md
+     to: CHANGELOG.md
